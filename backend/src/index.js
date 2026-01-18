@@ -8,7 +8,9 @@ cron.schedule("* * * * *",async()=>{
     emailScheduler();
 })
 
-app.listen(3001,()=>{
+const PORT=process.env.PORT;
+
+app.listen(PORT,()=>{
 
     connectDB();
     emailScheduler();
