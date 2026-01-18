@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://email-reminder-dsa.vercel.app/" }));
 app.use(express.json());
 
 app.use("/test", testRoute);

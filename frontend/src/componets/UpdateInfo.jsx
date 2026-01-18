@@ -39,7 +39,7 @@ const UpdateInfo = () => {
 
     try {
       const response = await axios.put(
-        "http://localhost:3001/users/update-user",
+        "https://email-reminder-dsa.onrender.com/users/update-user",
         formData
       );
       alert(response.data.message);
