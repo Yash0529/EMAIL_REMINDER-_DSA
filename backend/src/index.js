@@ -6,7 +6,7 @@ import { emailScheduler } from './services/email.scheduler.js';
 
 cron.schedule("* * * * *",async()=>{
     emailScheduler();
-})
+});
 
 const PORT=process.env.PORT;
 
