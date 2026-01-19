@@ -10,8 +10,6 @@ dotenv.config();
 
 console.log("Worker started!!")
 
-console.log("Redi url: ", process.env.REDIS_URL);
-
 const emailWorker = new Worker(
   "emailQueue",
   async (job) => {
