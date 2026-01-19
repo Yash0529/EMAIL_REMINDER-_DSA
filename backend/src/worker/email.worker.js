@@ -8,6 +8,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+console.log("Worker started!!")
+
 const emailWorker = new Worker(
   "emailQueue",
   async (job) => {
